@@ -1,0 +1,50 @@
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.year {
+  display: flex;
+  align-items: center;
+}
+
+.year::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.hour {
+  display: flex;
+  align-items: center;
+}
+
+.hour::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 5px;
+}

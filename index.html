@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link rel="stylesheet" href="./css/bootstrap5.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="pt-5 pb-5 bg-dark">
+
+  <div class="container">
+    <div>
+      <h1 class="text-center text-warning mb-3">Cinema</h1>
+    </div>
+    <div class="movies row">
+
+    </div>
+  </div>
+
+
+<!-- Modal -->
+<div class="movie-info-modal modal fade" id="more-info-modal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row align-items-center mb-3">
+          <div class="col-lg-5">
+            <h3 class="movie-info-modal__title mb-md-0">Movie</h3>
+          </div>
+          <div class="col-lg-7">
+            <div class="d-flex flex-wrap small">
+              <span class="d-flex align-items-center me-3">
+                <img class="me-1" src="img/icon-star.svg" alt="" width="16" height="16">
+                <span class="movie-info-modal__rating">7.7</span>
+              </span>
+              <span class="d-flex align-items-center me-3">
+                <img class="me-1" src="img/icon-calendar-event.svg" alt="" width="16" height="16">
+                <span class="movie-info-modal__year">2001</span>
+              </span>
+              <span class="d-flex align-items-center ">
+                <img class="me-1" src="img/icon-clock.svg" alt="" width="16" height="16">
+                <span class="movie-info-modal__duration">1 hr 20 min</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5 mb-3 mb-lg-0">
+            <div class="ratio ratio-16x9">
+              <iframe class="movie-info-modal__iframe d-block w-100 border-0 rounded" src="https://www.youtube-nocookie.com/embed/j51ae5KM7N0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <p class="movie-info-modal__categories">Thriller, Action, Comedy</p>
+            <p class="movie-info-modal__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil itaque impedit doloribus! Aperiam vero nostrum quaerat quos magnam molestiae hic officia eveniet similique eligendi. Voluptate obcaecati deserunt veritatis porro laboriosam?</p>
+            <div>
+              <a class="movie-info-modal__imdb-link" href="#" target="_blank">Show on IMDb</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <template id="movies__template">
+    <div class="card col-3 p-2 mb-4">
+      <img class="movie__img mb-3 w-100" src="" alt="movie picture" width="150" height="150">
+      <h1 class="movie__title h3 m-0 mb-2"></h1>
+      <div class="d-flex align-items-center mb-2">
+        <span class="movie__rating rating me-4"></span>
+        <span class="movie__year year me-4"></span>
+        <span class="movie__hour hour"></span>
+      </div>
+      <p class="movie__genre flex-grow-1"></p>
+      <a class="btn btn-outline-dark w-50" href="#" data-bs-toggle="modal" data-bs-target="#more-info-modal">More info</a>
+    </div>
+  </template>
+
+  <script src="js/bootstrap5.bundle.min.js"></script>
+  <script src="js/movies.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
