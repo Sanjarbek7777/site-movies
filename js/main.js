@@ -28,3 +28,19 @@ for (var movie of movies.slice(0,52)) {
 }
 
 elMovies.appendChild(elMoviesFragment);
+
+// const elSearchForm = document.querySelector('.js-search-form');
+
+// if (elSearchForm) {
+//   elSearchForm.addEventListener('submit', function (evt) {
+//     evt.preventDefault();
+
+//     const elSearchInput = elSearchForm.querySelector('.js-search-input');
+
+//     for (const nom of movies.slice(0, 50)) {
+//       if (elSearchInput.value === nom.Title) {
+//         console.log(nom);
+//       }
+//     }
+//   });
+// }

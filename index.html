@@ -14,6 +14,13 @@
     <div>
       <h1 class="text-center text-warning mb-3">Cinema</h1>
     </div>
+
+    <div class="col-12">
+      <form class="js-search-form" action="https://echo.htmlacademy.ru">
+        <input class="js-search-input form-control mb-3" type="search" name="search" aria-label="search" placeholder="Search">
+      </form>
+    </div>
+
     <div class="movies row">
 
     </div>
@@ -27,20 +34,20 @@
       <div class="modal-body">
         <div class="row align-items-center mb-3">
           <div class="col-lg-5">
-            <h3 class="movie-info-modal__title mb-md-0">Movie</h3>
+            <h3 class="movie-info-modal__title mb-md-0">Movie title</h3>
           </div>
           <div class="col-lg-7">
             <div class="d-flex flex-wrap small">
               <span class="d-flex align-items-center me-3">
-                <img class="me-1" src="img/icon-star.svg" alt="" width="16" height="16">
+                <img class="me-1" src="img/star.svg" alt="" width="16" height="16">
                 <span class="movie-info-modal__rating">7.7</span>
               </span>
               <span class="d-flex align-items-center me-3">
-                <img class="me-1" src="img/icon-calendar-event.svg" alt="" width="16" height="16">
+                <img class="me-1" src="img/calendar.svg" alt="" width="16" height="16">
                 <span class="movie-info-modal__year">2001</span>
               </span>
               <span class="d-flex align-items-center ">
-                <img class="me-1" src="img/icon-clock.svg" alt="" width="16" height="16">
+                <img class="me-1" src="img/clock.svg" alt="" width="16" height="16">
                 <span class="movie-info-modal__duration">1 hr 20 min</span>
               </span>
             </div>
@@ -83,6 +90,7 @@
 
   <script src="js/bootstrap5.bundle.min.js"></script>
   <script src="js/movies.js"></script>
+  <!-- <script src="js/normalized-movies.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 </html>
