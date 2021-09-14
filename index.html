@@ -16,8 +16,13 @@
     </div>
 
     <div class="col-12">
-      <form class="js-search-form" action="https://echo.htmlacademy.ru">
-        <input class="js-search-input form-control mb-3" type="search" name="search" aria-label="search" placeholder="Search">
+      <form class="js-search-form d-flex align-items-center mb-3" action="https://echo.htmlacademy.ru" method="GET">
+        <select class="form-control me-2" name="select">
+          <option value="categories" selected disabled>Categories</option>
+          <option value="all">All</option>
+        </select>
+        <input class="js-search-input form-control me-2" type="search" name="search" aria-label="search" placeholder="Search" required>
+        <input class="form-control" type="number" name="rating" aria-label="rating" placeholder="Rating">
       </form>
     </div>
 
@@ -84,13 +89,13 @@
         <span class="movie__hour hour"></span>
       </div>
       <p class="movie__genre flex-grow-1"></p>
-      <a class="btn btn-outline-dark w-50" href="#" data-bs-toggle="modal" data-bs-target="#more-info-modal">More info</a>
+      <a class="js-info-btn btn btn-outline-dark w-50" href="#" data-bs-toggle="modal" data-bs-target="#more-info-modal">More info</a>
     </div>
   </template>
 
   <script src="js/bootstrap5.bundle.min.js"></script>
-  <script src="js/movies.js"></script>
-  <!-- <script src="js/normalized-movies.js"></script> -->
+  <!-- <script src="js/movies.js"></script> -->
+  <script src="js/normalized-movies.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
